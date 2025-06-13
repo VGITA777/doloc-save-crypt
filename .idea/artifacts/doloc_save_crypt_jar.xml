@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="doloc-save-crypt:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/doloc_save_crypt_jar</output-path>
+    <root id="archive" name="doloc-save-crypt.jar">
+      <element id="module-output" name="doloc-save-crypt" />
+    </root>
+  </artifact>
+</component>
