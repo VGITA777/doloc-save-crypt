@@ -33,3 +33,6 @@ java -jar doloc-save-crypt.jar 2 path/to/save-game-encrypted.data [output-folder
 - The application will print `Operation completed successfully.` when finished.
 - Invalid arguments or modes will result in an error message.
 
+## Disclaimer
+- This tool is provided for educational purposes only. I do not condone or support cheating in any form.
+
