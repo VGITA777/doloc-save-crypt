@@ -16,13 +16,13 @@ This app is a command-line tool. You must provide arguments when running the pro
 
 #### Encrypt a Save File
 ```
-java -cp . Main 1 path/to/save-game.json [output-folder]
+java -jar doloc-save-crypt.jar 1 path/to/save-game.json [output-folder]
 ```
 - Output: `./save-game-encrypted.data`
 
 #### Decrypt a Save File
 ```
-java -cp . Main 2 path/to/save-game-encrypted.data [output-folder]
+java -jar doloc-save-crypt.jar 2 path/to/save-game-encrypted.data [output-folder]
 ```
 - Output: `./save-game-decrypted.json`
 
