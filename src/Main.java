@@ -1,7 +1,9 @@
+import java.io.IOException;
+import java.nio.file.Files;
 import java.nio.file.Path;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         String entryMessage =
                 "Arg 1: Mode (1: Encrypt, 2: Decrypt) - Arg 2: Game File Location - Arg 3 (optional): File Output Location Folder";
         if (args.length < 1 || args.length > 3) {
@@ -18,7 +20,8 @@ public class Main {
                         .of(".")
                         .toAbsolutePath();
         String fileName = (mode.equals("1")) ? "save-game-encrypted.data" : "save-game-decrypted.json";
-        Path fullOutputPath = outputPath.resolve(fileName);
+        Path fullOutputPath = Path.of(outputPath.toAbsolutePath().toString(), fileName);
+        Files.createDirectories(outputPath);
 
         if (mode.equals("1")) {
             SaveFileHandler.encryptToFile(gameFilePath, fullOutputPath);
