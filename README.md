@@ -1,6 +1,6 @@
 # Doloc Save Crypt
 
-A simple Java application to encrypt and decrypt game save files.
+A simple Java application to encrypt and decrypt game save files from the game [Doloc Town](https://store.steampowered.com/app/2285550/Doloc_Town/).
 
 ## Usage
 
@@ -9,7 +9,7 @@ This app is a command-line tool. You must provide arguments when running the pro
 ### Arguments
 
 1. **Mode**: `1` for Encrypt, `2` for Decrypt
-2. **Game File Location**: Path to the input game save file
+2. **Game File Location**: Path to the game save file
 3. **File Output Location Folder** (optional): Directory where the output file will be saved. If omitted, the current directory is used.
 
 ### Example Commands
@@ -28,9 +28,6 @@ java -jar doloc-save-crypt.jar 2 path/to/save-game-encrypted.data [output-folder
 
 - Replace `path/to/save-game.json` and `[output-folder]` with your actual file paths.
 - If `[output-folder]` is omitted, the output will be saved in the current directory.
-
-## Requirements
-- Java 17 or higher
 
 ## Notes
 - The application will print `Operation completed successfully.` when finished.
